@@ -10,6 +10,5 @@ def rotate_2d_matrix(matrix):
             tmp = matrix[i][j]
             matrix[i][j] = matrix[x][i]
             matrix[x][i] = matrix[(len(matrix) - i - 1)][x]
-            matrix[(len(matrix) - i - 1)][x]
-            = matrix[j][(len(matrix) - i - 1)]
+            matrix[(len(matrix) - i - 1)][x] = matrix[j][(len(matrix) - i - 1)]
             matrix[j][(len(matrix) - i - 1)] = tmp
